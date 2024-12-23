@@ -4,7 +4,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { GoogleAnalyticsProvider } from "@/lib/analytics/google/GoogleAnalyticsProvider";
-
+import { OpenPanelProvider } from "@/lib/analytics/openpanel/OpenPanelProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,6 +33,7 @@ export default function RootLayout({
         suppressHydrationWarning
       >
         <GoogleAnalyticsProvider />
+        <OpenPanelProvider />
         <Header />
         {children}
         <Footer />
