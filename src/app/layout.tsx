@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
-import "../styles/globals.css";
+import "./globals.css";
 import { Geist, Geist_Mono } from "next/font/google";
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
-import { GoogleAnalyticsProvider } from "@/lib/analytics/google/GoogleAnalyticsProvider";
 import { OpenPanelProvider } from "@/lib/analytics/openpanel/OpenPanelProvider";
 
 const geistSans = Geist({
@@ -32,10 +31,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased]`}
         suppressHydrationWarning
       >
-        <GoogleAnalyticsProvider />
         <OpenPanelProvider />
         <Header />
-        {children}
+        <main>{children}</main>
         <Footer />
       </body>
     </html>
