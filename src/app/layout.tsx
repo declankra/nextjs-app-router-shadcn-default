@@ -1,19 +1,15 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { OpenPanelProvider } from "@/lib/analytics/openpanel/OpenPanelProvider";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"]
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-sans",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"]
-});
 
 export const metadata: Metadata = {
   title: "Create dkBuilds Next App",
@@ -28,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased]`}
+        className={`${inter.variable} antialiased`}
         suppressHydrationWarning
       >
         <OpenPanelProvider />
