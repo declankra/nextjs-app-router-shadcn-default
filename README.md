@@ -1,10 +1,10 @@
 # DKBuilds Next.js Starter Kit
 
-A simple Next.js starter template with some basic integrations. This project is bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+A simple Next.js starter template with some basic integrations. This project is bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app). Use it to launch your next web application, fast.
 
 ## Features
 
-- **Next.js 15+** with App Router
+- **Next.js 14.2.14** with App Router
 - **Analytics Integration**
   - OpenPanel for self-hosted analytics
   - Google Analytics for comprehensive tracking
@@ -43,14 +43,12 @@ SUPABASE_SERVICE_ROLE_KEY=your-supabase-service-role-key
 NEXT_PUBLIC_OPENPANEL_PROD_CLIENT_ID=your-openpanel-client-id
 NEXT_PUBLIC_OPENPANEL_DEV_CLIENT_ID=your-openpanel-dev-client-id
 
-# Google Analytics
-NEXT_PUBLIC_GA_ID=your-ga-measurement-ids
 ```
 
 ## Project Structure
 
 ```
-├── app/                # App router directory
+├── app/                # App router 
 │   ├── layout       # Reusable layout
 │   └── page         # Main page
 ├── components/         # React components
@@ -58,9 +56,9 @@ NEXT_PUBLIC_GA_ID=your-ga-measurement-ids
 │   ├── sections/      # Reusable sections
 │   └── layout/        # Layout components
 ├── lib/               # Utility functions
-│   ├── supabase/      # Supabase client setup
-│   └── analytics/     # Analytics configuration
-└── styles/            # Global styles
+│   ├── supabase/      # Supabase client 
+│   ├── analytics/     # Analytics
+├── types/             # TypeScript type definitions
 ```
 
 ## Learn More
