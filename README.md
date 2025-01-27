@@ -17,15 +17,40 @@ A simple Next.js starter template with some basic integrations. This project is 
 
 ## Getting Started
 
-First, run the development server:
+### Initial Setup
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+1. **Clone the Repository**
+   ```bash
+   # Navigate to your desired folder
+   cd ~/Documents/Projects
+   
+   # Clone the repository
+   git clone https://github.com/declankra/nextjs-app-router-shadcn-default.git
+   
+   # Enter the repository folder
+   cd nextjs-app-router-shadcn-default
+   ```
+
+2. **Install Dependencies**
+   ```bash
+   # Using npm
+   npm install
+   
+   # Or using yarn
+   yarn install
+   
+   # Or using pnpm
+   pnpm install
+   ```
+
+3. **Start Development Server**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
