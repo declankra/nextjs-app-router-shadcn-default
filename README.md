@@ -4,16 +4,15 @@ A simple Next.js starter template with some basic integrations. This project is 
 
 ## Features
 
-- **Next.js 14.2.14** with App Router
-- **Analytics Integration**
-  - OpenPanel for self-hosted analytics
-  - Google Analytics for comprehensive tracking
+- **Next.js 14.2.14** with App Router, Typescript, and Tailwind CSS
+- **Shadcn/ui** for pre-configured components
+- **Framer Motion** for smooth animations
+- **Analytics**: OpenPanel
 - **Supabase** for backend services
   - Authentication
   - Database
   - Real-time subscriptions
-- **shadcn/ui** for pre-configured components
-- **Framer Motion** for smooth animations
+- **Deployment**: Vercel
 
 ## Getting Started
 
@@ -33,23 +32,12 @@ A simple Next.js starter template with some basic integrations. This project is 
 
 2. **Install Dependencies**
    ```bash
-   # Using npm
    npm install
-   
-   # Or using yarn
-   yarn install
-   
-   # Or using pnpm
-   pnpm install
    ```
 
 3. **Start Development Server**
    ```bash
    npm run dev
-   # or
-   yarn dev
-   # or
-   pnpm dev
    ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -59,6 +47,9 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 Create a `.env.local` file using the `.env.example` file as a reference.
 
 ```env
+# Set up environment variables
+cp .env.example .env.local
+
 # Supabase Configuration
 NEXT_PUBLIC_SUPABASE_URL=your-supabase-project-url
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your-supabase-anon-key
