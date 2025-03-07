@@ -1,0 +1,15 @@
+{
+    "mcpServers": {
+      "supabase": {
+        "command": "npx",
+        "args": ["-y", "@modelcontextprotocol/server-postgres", "postgresql://postgres.[your-database]:[your-password]@aws-0-us-west-1.pooler.supabase.com:5432/postgres"],
+        "writeAccess": true
+      },
+      "smithery": {
+        "command": "npx",
+        "args": ["-y", "@smithery/cli@latest", "run", "@smithery-ai/server-sequential-thinking", "--config", "{}"],
+        "writeAccess": true
+      }
+    }
+  }
+  

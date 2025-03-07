@@ -2,8 +2,8 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { Inter } from "next/font/google";
-import Header from '@/components/layout/Header';
-import Footer from '@/components/layout/Footer';
+import Header from '@/components/shared/Header';
+import Footer from '@/components/shared/Footer';
 import { OpenPanelProvider } from "@/lib/analytics/openpanel/OpenPanelProvider";
 
 const inter = Inter({
@@ -21,12 +21,12 @@ export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'),
   title: "Create dkBuilds Next App",
   description: "dkbuilds next app starter-kit",
+  keywords: ["dkbuilds", "next", "app", "starter-kit"],
 
     // Open Graph metadata for rich sharing previews
     openGraph: {
       title: "dkBuilds Next App",
       description: "dkbuilds next app starter-kit",
-      url: process.env.NEXT_PUBLIC_BASE_URL,
       siteName: "dkBuilds Next App",
       images: [
         {
@@ -38,6 +38,26 @@ export const metadata: Metadata = {
       ],
       locale: "en_US",
       type: "website",
+      url: process.env.NEXT_PUBLIC_BASE_URL,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "dkBuilds Next App",
+      description: "dkbuilds next app starter-kit",
+      creator: "@dkbuildsco", 
+      images: ["/og-image.png"]
+    },
+
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
     },
 
   // Favicon and manifest

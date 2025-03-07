@@ -8,8 +8,8 @@ A simple Next.js starter template with some basic integrations. This project is 
 - **Shadcn/ui** for pre-configured components
 - **Framer Motion** for smooth animations
 - **Analytics**: OpenPanel
+- **Authentication**: Clerk (to be added)
 - **Supabase** for backend services
-  - Authentication
   - Database
   - Real-time subscriptions
 - **Deployment**: Vercel

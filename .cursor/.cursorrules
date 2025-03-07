@@ -38,9 +38,10 @@ This is a web app template.
 - `lib` - Library code
   - `hooks` - Custom hooks
   - `utilities` - Custom utilities
+  - `types` - Type definitions
+  - `hooks` - Hooks
 - `PRDs` - Product Requirement Document files
 - `public` - Static assets
-- `types` - Type definitions
 
 ## Rules
 
