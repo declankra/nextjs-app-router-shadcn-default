@@ -4,7 +4,7 @@ A simple Next.js starter template with some basic integrations. This project is 
 
 ## Features
 
-- **Next.js 14.2.14** with App Router, Typescript, and Tailwind CSS
+- **Next.js 15+** with App Router, Typescript, and Tailwind CSS
 - **Shadcn/ui** for pre-configured components
 - **Framer Motion** for smooth animations
 - **Analytics**: OpenPanel
@@ -64,17 +64,23 @@ NEXT_PUBLIC_OPENPANEL_DEV_CLIENT_ID=your-openpanel-dev-client-id
 ## Project Structure
 
 ```
-├── app/                # App router 
-│   ├── layout       # Reusable layout
-│   └── page         # Main page
+├── app/                # Next.js App Router 
+│   ├── api/           # API routes
+│   ├── (routes)/      # Application routes
+│   ├── layout.tsx     # Root layout
+│   └── page.tsx       # Home page
 ├── components/         # React components
 │   ├── ui/            # shadcn/ui components
-│   ├── sections/      # Reusable sections
-│   └── layout/        # Layout components
-├── lib/               # Utility functions
-│   ├── supabase/      # Supabase client 
-│   ├── analytics/     # Analytics
-├── types/             # TypeScript type definitions
+│   └── (custom)/      # Custom components
+├── lib/                # Utility functions and configurations
+│   ├── utils.ts       # Helper utilities
+│   └── (other)/       # Other utility modules
+├── public/             # Static assets
+├── styles/             # Global styles
+├── types/              # TypeScript type definitions
+├── next.config.js      # Next.js configuration
+├── tailwind.config.js  # Tailwind CSS configuration
+└── tsconfig.json       # TypeScript configuration
 ```
 
 ## Learn More
