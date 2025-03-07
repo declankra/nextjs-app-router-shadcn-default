@@ -1,0 +1,23 @@
+---
+description: Designing and Styling the UI of FE Components
+globs: 
+alwaysApply: false
+---
+### Style & Design
+
+- **Design Aesthetic:**
+    - Minimalistic, modern, and uncluttered.
+    - Floating with active states and smooth animations.
+    - Consistent color scheme: primarily black/white with vibrant colors for clarity
+- **Interaction Details:**
+    - Hover magnification/animation effects.
+    - Smooth movements.
+- **Style:** clean, sleek, minimalistic, uncluttered, and modern style. Colors are occasionally uses sharp, crisp animations to keep visitors engaged, adding a “wow” effect.
+- **Color Scheme:** Black and white everything unless for the key messaging and actionable moments
+    - automatically swaps white/black based on appearance
+        - primary color = black
+        - primary base = white
+        - base content = shade of black-ish grey
+        - base = white
+- **Brand:**
+    - Premium. Elegance. Elevated everyday. Minimalistic Productivity. Professional.
